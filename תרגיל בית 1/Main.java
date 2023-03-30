@@ -215,6 +215,12 @@ public class Main
                         sum += 15 * (Math.pow(16, pow));
                     }
                 }
+                else
+                {
+                    System.out.println("The requested number to convert is not in 16 base range");
+                    isExceed = true;
+                    break;
+                }
                 pow--;
             }
             if (isExceed == false)
